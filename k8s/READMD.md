@@ -11,6 +11,7 @@ To install Kubectl on your local machine, follow the steps below based on your o
 2. Make the kubectl binary executable:
    ```
    chmod +x ./kubectl
+
    ```
 3. Move the binary to your PATH: 
     ```
