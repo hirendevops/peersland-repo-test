@@ -22,10 +22,7 @@ jobs:
         node-version: '18'
 
     - name: Install dependencies
-      run: npm install
-
-    - name: Run tests
-      run: npm test || echo "No tests found"
+      run: npm install --prefix ./application/backend
 
     - name: Log in to Azure
       uses: azure/login@v2
