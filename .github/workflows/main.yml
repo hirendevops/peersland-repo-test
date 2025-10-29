@@ -54,5 +54,5 @@ jobs:
           k8s/chatapp-backend-deployment.yaml
           k8s/chatapp-backend-service.yaml
         images: |
-          ${{ env.IMAGE_TAG }}
+          ${{ env.REGISTRY }}.azurecr.io/${{ env.IMAGE_NAME }}:${{ github.run_number }}
         namespace: chat-app
